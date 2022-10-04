@@ -27,6 +27,7 @@ typedef tree<
 #define all(x) x.begin(), x.end()
 #define rall(x) x.rbegin(), x.rend()
 
+// const ll MOD = 1276381699;
 const ll MOD = 1e9 + 7;
 const int MXN = 2e5 + 5;
 
