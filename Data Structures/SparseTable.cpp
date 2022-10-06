@@ -6,7 +6,6 @@ const int MXN = 1e5 + 5;
 
 int lg[MXN + 1];
 int st[MXN][26 + 1];
-
 void build(vector<int> x)
 {
     lg[1] = 0;
@@ -21,7 +20,6 @@ void build(vector<int> x)
         for (int ii = 0; ii + (1 << jj) <= n; ii++)
             st[ii][jj] = min(st[ii][jj - 1], st[ii + (1 << (jj - 1))][jj - 1]);
 }
-
 int query(int L, int R)
 {
     int jj = lg[R - L + 1];
